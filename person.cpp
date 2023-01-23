@@ -1,14 +1,24 @@
+#pragma once
 #include <string>
 
-class person{ 
+class person { 
 public:
-string getname();
-int getage();
+	std::string getName(){
+		return name;
+	}
+	int getAge(){
+		return age;
+	}
 
-string setname(name);
-in setage(age);
+	void setName(std::string name){
+		this->name = name;
+	}
+	
+	void setAge(int age){
+		this->age = age;
+	}
 
 private:
-string name;
-int age;
+	std::string name;
+	int age;
 };
